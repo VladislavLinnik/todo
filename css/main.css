@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+.container {
+    max-width: 1150px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    padding: 15px 0;
+    background-color: #f4a442;
+}
+.header-logo {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+.header-logo a {
+    font-size: 48px;
+}
+
+.header-enter {
+    margin: 0 auto;
+    width: 70%;
+}
+.input-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.input-wrap .input-enter {
+    padding: 10px 5px;
+    width: 70%;
+    display: block;
+    font-size: 24px;
+    border-radius: 5px;
+    border: none;
+}
+.input-wrap .input-add {
+    min-width: 100px;
+    width: 20%;
+    padding: 0 10px;
+    background-color: #ff2629;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+.tasks {
+    /* padding: 15px 0; */
+    background-color: #66baff;
+}
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+
+    color: #fff;
+}
+
+.tasks-item + .tasks-item {
+    border-top: 1px solid #fff;
+}
+.tasks-item {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.task-delete {
+    margin-left: -20px;
+    position: relative;
+    font-size: 24px;
+    cursor: pointer;
+}

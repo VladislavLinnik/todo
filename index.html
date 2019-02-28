@@ -14,22 +14,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- ИКОНКА -->
-	<link rel="shortcut icon" href="http://..." type="image/x-icon">
+	<!-- <link rel="shortcut icon" href="http://..." type="image/x-icon"> -->
 
 	<!-- ШРИФТЫ -->
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
 	<!-- СТИЛИ -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
-
-	<!-- ПОДКЛЮЧЕНИЕ JQUERY -->
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-	<script src="js/jquery.3.3.1.min.js"></script>
-
-	<!-- СКРИПТЫ -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<!-- <script src="https://use.fontawesome.com/7457d043e6.js"></script> -->
 
 	<!-- ДЛЯ ПОДДЕРЖКИ HTML5 В IE -->
 	<!--[if IE]>
@@ -39,7 +31,35 @@
 	<title>TODO list (Vanilla JS)</title>
 </head>
 <body>
+	<header class="header">
+		<div class="container">
+			<div class="header-logo">
+				<h1><a href="/">ToDo</a></h1>
+			</div>
 
+			<div class="header-enter">
+				<div class="input-wrap">
+					<input type="text" class="input-enter js-input" placeholder="type here">
+					<button type="button" class="input-add js-btnAdd">Add</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="tasks">
+		<div class="container">
+			<ul class="tasks-list">
+				<li class="tasks-item">
+					<div class="task-text">Первый таск</div>
+					<div class="task-delete js-btnDelete">&#10008;</div>
+				</li>
+				<li class="tasks-item">
+					<div class="task-text">Второй таск</div>
+					<div class="task-delete js-btnDelete">&#10008;</div>
+				</li>
+			</ul>
+		</div>
+	</main>
 
 
 
